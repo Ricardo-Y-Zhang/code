@@ -5,6 +5,7 @@ public class PersonTest {
         Person p1 = new Person();
         Person p2 = new Person("Tom");
         Person p3 = new Person("Jack", 18);
+
     }
 }
 class Person{
@@ -24,5 +25,9 @@ class Person{
         name = n;
         age = a;
         System.out.println("Person(String n, int a)");
+    }
+
+    public String getName(){
+        return name;
     }
 }
