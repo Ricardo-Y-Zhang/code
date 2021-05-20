@@ -4,6 +4,7 @@ public class OverloadExer {
     public void mOL(int x){
         System.out.println(x * x);
     }
+
     public void mOL(int x, int y){
         System.out.println(x * y);
     }

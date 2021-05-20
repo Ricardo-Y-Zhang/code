@@ -13,12 +13,28 @@ public class PersonTest {
         System.out.println(test.getName() + "\t\t" + test.getAge());
 
         test.eat();
+
+        //this调用构造器
+        Person test1 = new Person("this调用构造器");
+        System.out.println(test1.getName() + "\t\t" + test1.getAge());
     }
 }
 
 class Person{
     private String name;
     private int age;
+
+    public Person(){
+        this.age = 18;
+    }
+    public Person(String name){
+        this();
+        this.name = name;
+        /*
+        this();
+        this调用构造器只能放在第一位
+         */
+    }
 
     //this关键字的使用
     public void setAge(int age){
