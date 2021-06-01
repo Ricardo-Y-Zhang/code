@@ -26,4 +26,6 @@ public class GeometricTest {
     public void display(GeometricObject o){//GeometricObject o = new Circle()
         System.out.println("面积为： " + o.findArea());
     }
+
+
 }
