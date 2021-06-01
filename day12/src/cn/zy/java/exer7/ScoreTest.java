@@ -19,7 +19,7 @@ public class ScoreTest {
 
         System.out.println("输入成绩：");
 
-        double score = scanner.nextDouble();
+        int score = scanner.nextInt();
 
         while(score > 0){
             //自动装箱
@@ -27,12 +27,12 @@ public class ScoreTest {
         }
 
 
-        double max = -1;
+        int max = -1;
         for(int i = 0; i < v.size(); i++){
             Object obj =  v.elementAt(i);
 
-            Double temp = (Double) obj;
-            double temp1 = temp;
+            Integer temp = (Integer) obj;
+            int temp1 = temp;
 
             if(temp1 > max){
                 max = temp1;
@@ -44,8 +44,8 @@ public class ScoreTest {
         for(int i = 0; i < v.size(); i++){
             Object obj =  v.elementAt(i);
 
-            Double temp = (Double) obj;
-            double temp1 = temp;
+            Integer temp = (Integer) obj;
+            int temp1 = temp;
 
             if(max - temp1 <= 10){
                 System.out.println("v[" + i + "]: " + temp1 + "—— A " );
