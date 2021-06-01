@@ -11,50 +11,52 @@ import java.util.Vector;
  **/
 public class ScoreTest {
     public static void main(String[] args) {
-        Vector v = new Vector();
-
 
         //实例化Scanner，键盘输入
         Scanner scanner = new Scanner(System.in);
 
+
+        //vector动态数组，添加数据
+        Vector v = new Vector();
+
         System.out.println("输入成绩：");
 
-        int score = scanner.nextInt();
+        double score = scanner.nextDouble();
 
         while(score > 0){
-            //自动装箱
+            //自动装箱：基本数据类型转换为包装类
             v.addElement(score);
+
+            score = scanner.nextDouble();
         }
 
 
-        int max = -1;
+        //遍历vector，找max
+        double max = 0;
         for(int i = 0; i < v.size(); i++){
-            Object obj =  v.elementAt(i);
 
-            Integer temp = (Integer) obj;
-            int temp1 = temp;
+            //自动拆箱：包装类转换为基本数据类型
+            double temp = (Double) v.elementAt(i);
+            //或double temp = (double) v.elementAt(i);
 
-            if(temp1 > max){
-                max = temp1;
+            if(temp > max){
+                max = temp;
             }
         }
 
         System.out.println("max = " + max);
 
         for(int i = 0; i < v.size(); i++){
-            Object obj =  v.elementAt(i);
+            double temp = (Double) v.elementAt(i);
 
-            Integer temp = (Integer) obj;
-            int temp1 = temp;
-
-            if(max - temp1 <= 10){
-                System.out.println("v[" + i + "]: " + temp1 + "—— A " );
-            }else if(max - temp1 <= 20){
-                System.out.println("v[" + i + "]: " + temp1 + "—— B " );
-            }else if(max - temp1 <= 30){
-                System.out.println("v[" + i + "]: " + temp1 + "—— C " );
+            if(max - temp <= 10){
+                System.out.println("v[" + i + "]: " + temp + "—— A " );
+            }else if(max - temp <= 20){
+                System.out.println("v[" + i + "]: " + temp + "—— B " );
+            }else if(max - temp <= 30){
+                System.out.println("v[" + i + "]: " + temp + "—— C " );
             }else{
-                System.out.println("v[" + i + "]: " + temp1 + "—— D " );
+                System.out.println("v[" + i + "]: " + temp + "—— D " );
             }
         }
     }
