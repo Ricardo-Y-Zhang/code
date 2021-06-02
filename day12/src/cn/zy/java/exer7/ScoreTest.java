@@ -50,14 +50,15 @@ public class ScoreTest {
             double temp = (Double) v.elementAt(i);
 
             if(max - temp <= 10){
-                System.out.println("v[" + i + "]: " + temp + "—— A " );
+                System.out.println("v[" + i + "]: " + temp + "\t—— A " );
             }else if(max - temp <= 20){
-                System.out.println("v[" + i + "]: " + temp + "—— B " );
+                System.out.println("v[" + i + "]: " + temp + "\t—— B " );
             }else if(max - temp <= 30){
-                System.out.println("v[" + i + "]: " + temp + "—— C " );
+                System.out.println("v[" + i + "]: " + temp + "\t—— C " );
             }else{
-                System.out.println("v[" + i + "]: " + temp + "—— D " );
+                System.out.println("v[" + i + "]: " + temp + "\t—— D " );
             }
         }
+
     }
 }
