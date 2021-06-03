@@ -20,11 +20,12 @@ public class Person2 {
         this.age = age;
     }
 
-    //代码块
+    //静态代码块：加载类时执行，只执行一次
     static{
         System.out.println("static代码块");
     }
 
+    //非静态代码块：加载对象时执行
     {
         System.out.println("非static代码块");
     }
