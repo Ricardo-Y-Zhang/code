@@ -6,7 +6,7 @@ package src.cn.zy.java.exer2;
  * @author: Mr.Yan
  * @create: 2021-05-31 15:45
  **/
-public class Student extends Person{
+public class Student extends Person1 {
     protected String school = "pku";
 
     public String getInfo(){
