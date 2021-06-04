@@ -6,10 +6,10 @@ package src.cn.zy.java.exer1;
  * @author: Mr.Yan
  * @create: 2021-05-31 14:21
  **/
-public class PersonTest {
+public class Person1Test {
     public static void main(String[] args){
         //对象的多态性，父类的引用指向子类的对象
-        Person p1 = new Man();
+        Person1 p1 = new Man1();
 
         //虚拟方法调用：多态的使用，当调用子父类同名同参数的方法时，实际执行的是子类重写父类的方法
         p1.eat();
@@ -24,10 +24,10 @@ public class PersonTest {
 
         System.out.println("向下转型：");
 
-       if(p1 instanceof Man){
+       if(p1 instanceof Man1){
            System.out.println("男人");
 
-           Man m1 = (Man) p1;
+           Man1 m1 = (Man1) p1;
 
            m1.earnMoney();
 

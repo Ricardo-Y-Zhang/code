@@ -6,7 +6,7 @@ package src.cn.zy.java.exer1;
  * @author: Mr.Yan
  * @create: 2021-05-31 14:18
  **/
-public class Woman extends Person{
+public class Woman extends Person1{
     boolean isBeauty;
 
     public void eat(){

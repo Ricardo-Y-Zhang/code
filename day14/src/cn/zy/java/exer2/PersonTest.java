@@ -1,7 +1,5 @@
 package src.cn.zy.java.exer2;
 
-import src.cn.zy.java.exer1.Person;
-
 /**
  * @program: code
  * @description:

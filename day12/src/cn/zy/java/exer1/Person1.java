@@ -6,7 +6,7 @@ package src.cn.zy.java.exer1;
  * @author: Mr.Yan
  * @create: 2021-05-31 14:19
  **/
-public class Person {
+public class Person1 {
     int id = 1000;
 
     public void eat(){
