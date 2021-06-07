@@ -1,7 +1,5 @@
 package src.cn.zy.java.exer1;
 
-import javax.swing.plaf.SliderUI;
-
 /**
  * @program: code
  * @description:
