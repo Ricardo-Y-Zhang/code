@@ -77,19 +77,19 @@ public class ExceptionTest {
 
 
 
-    //编译时异常
-    @Test
-    public void test7(){
-        File file = new File("hello.txt");
-        FileInputStream fis = new FileInputStream(file);
-
-        int data = fis.read();
-
-        while(data != -1){
-            System.out.println(data);
-        }
-
-        fis.close();
-    }
+//    //编译时异常
+//    @Test
+//    public void test7(){
+//        File file = new File("hello.txt");
+//        FileInputStream fis = new FileInputStream(file);
+//
+//        int data = fis.read();
+//
+//        while(data != -1){
+//            System.out.println(data);
+//        }
+//
+//        fis.close();
+//    }
 }
 
