@@ -2,7 +2,7 @@ package src.cn.zy.java.exer9;
 
 /**
  * @program: code
- * @description:
+ * @description: 用户自定义异常类
  * @author: Mr.Yan
  * @create: 2021-06-09 16:44
  **/

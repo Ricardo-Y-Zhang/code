@@ -1,8 +1,5 @@
 package src.cn.zy.java.exer9;
 
-import java.io.Serializable;
-import java.util.Scanner;
-
 /**
  * @program: code
  * @description:
@@ -12,16 +9,14 @@ import java.util.Scanner;
 public class EcmDef {
     public static double ecm (double x, double y) throws EcDef{
         if(x < 0 || y < 0){
+            //手动抛出异常
             throw new EcDef("输入负数");
-        }else if(y == 0){
-            throw new ArithmeticException("除0");
-        }else{
+        } else{
             return x / y;
         }
     }
 
     public static void main(String[] args){
-
 
         try{
 
@@ -39,6 +34,5 @@ public class EcmDef {
             System.out.println(e.getMessage());
         }
     }
-
 }
 
