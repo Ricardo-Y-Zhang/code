@@ -55,13 +55,15 @@ public class Employee {
         this.salary = salary;
     }
 
+
+    //方便子类调用，super.super.toString() 错误语法
+    public String getDetails(){
+        return id + "\t" + name + "\t" + age + "\t" + salary;
+    }
+
+
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", salary=" + salary +
-                '}';
+        return getDetails();
     }
 }

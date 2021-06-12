@@ -26,5 +26,10 @@ public class Designer extends Programmer{
         this.bonus = bonus;
     }
 
+    @Override
+    public String toString() {
 
+        //调用父类的父类Employee中的getDetails方法
+        return getDetails() + "\t设计师\t" + getStatus() + "\t" + bonus + "\t\t" + getEquipment().getDescription();
+    }
 }

@@ -26,5 +26,10 @@ public class Architect extends Designer{
         this.stock = stock;
     }
 
+    @Override
+    public String toString() {
 
+        //调用父类的父类的父类的getDetails方法
+        return getDetails() + "\t架构师\t" + getStatus() + "\t" + getBonus() + "\t" + stock + "\t" + getEquipment().getDescription();
+    }
 }

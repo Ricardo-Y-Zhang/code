@@ -7,9 +7,10 @@ package src.cn.zy.team.service;
  * @create: 2021-06-11 16:49
  **/
 public class TeamException extends Exception{
-    static final long serialVersionUID = -3387516993124229947L;
+    static final long serialVersionUID = -338751699312422947L;
 
     public TeamException() {
+        super();
     }
 
     public TeamException(String message) {

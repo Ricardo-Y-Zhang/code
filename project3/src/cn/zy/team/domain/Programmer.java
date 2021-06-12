@@ -10,7 +10,7 @@ import src.cn.zy.team.service.Status;
  **/
 public class Programmer extends Employee{
     private int memberId;//开发团队中的id
-    private Status status;
+    private Status status = Status.FREE;//初始化赋默认值
     private Equipment equipment;
 
     public Programmer() {
@@ -43,5 +43,10 @@ public class Programmer extends Employee{
 
     public void setEquipment(Equipment equipment) {
         this.equipment = equipment;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\t程序员\t" + getStatus() + "\t\t\t" + getEquipment().getDescription();
     }
 }
