@@ -32,4 +32,9 @@ public class Architect extends Designer{
         //调用父类的父类的父类的getDetails方法
         return getDetails() + "\t架构师\t" + getStatus() + "\t" + getBonus() + "\t" + stock + "\t" + getEquipment().getDescription();
     }
+
+    @Override
+    public String getDetailsForTeam() {
+        return getTeamBaseDetails() + "\t架构师\t" + getBonus() + "\t" +  getStock();
+    }
 }

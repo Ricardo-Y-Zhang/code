@@ -17,6 +17,14 @@ public class TeamService {
     private Programmer[] team = new Programmer[MAX_MEMBER];
     private int total = 0;//记录实际人数
 
+
+    /**
+     * description: 返回团队中全体员工
+     * @param
+     * @return
+     * @author: Mr.Yan
+     * @date: 2021/6/12
+     **/
     public Programmer[] getTeam() {
         Programmer[] team = new Programmer[total];
         for(int i = 0; i < total; i++){
@@ -31,7 +39,7 @@ public class TeamService {
      * @param
      * @return
      * @author: Mr.Yan
-     * @date: 2021/6/11
+     * @date: 2021/6/12
      **/
     public void addMember(Employee e) throws TeamException{
         //成员已满，无法添加
@@ -110,7 +118,34 @@ public class TeamService {
 
     }
 
-    public void removeMemeber(int memberId) throws TeamException{
 
+
+    /**
+     * description: 移除团队中指定员工
+     * @param
+     * @return
+     * @author: Mr.Yan
+     * @date: 2021/6/13
+     **/
+    public void removeMemeber(int memberId) throws TeamException{
+        for(int i = 0; i < total; i++){
+            if(team[i].getMemberId() == memberId){
+
+                //更改工作状态
+                team[i].setStatus(Status.FREE);
+
+                for(int j = i + 1; j < total; j++){
+                    team[j-1] = team[j];
+                }
+
+                //更改total
+                team[--total] = null;
+
+
+                return;
+            }
+        }
+
+        throw new TeamException("找不到指定memberId的员工，删除失败");
     }
 }

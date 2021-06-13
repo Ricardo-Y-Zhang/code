@@ -137,6 +137,6 @@ public class NameListService {
                 return employees[i];
             }
         }
-        throw new TeamException("未找到指定员工，请重新输入：");
+        throw new TeamException("未找到指定员工");
     }
 }

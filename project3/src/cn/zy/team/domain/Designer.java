@@ -32,4 +32,9 @@ public class Designer extends Programmer{
         //调用父类的父类Employee中的getDetails方法
         return getDetails() + "\t设计师\t" + getStatus() + "\t" + bonus + "\t\t" + getEquipment().getDescription();
     }
+
+    @Override
+    public String getDetailsForTeam() {
+        return getTeamBaseDetails() + "\t设计师\t" + getBonus();
+    }
 }
