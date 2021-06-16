@@ -1,4 +1,4 @@
-package src.cn.zy.exer4;
+package cn.zy.exer4;
 
 public class Boy {
     private String name;

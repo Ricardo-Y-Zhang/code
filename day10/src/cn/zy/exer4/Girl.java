@@ -1,7 +1,5 @@
-package src.cn.zy.exer4;
+package cn.zy.exer4;
 
-import java.awt.*;
-import java.lang.reflect.GenericArrayType;
 
 public class Girl {
     private String name;

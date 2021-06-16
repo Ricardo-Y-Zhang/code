@@ -1,4 +1,4 @@
-package src.cn.zy.exer2;
+package cn.zy.exer2;
 
 public class TriAngleTest {
     public static void main(String[] args) {

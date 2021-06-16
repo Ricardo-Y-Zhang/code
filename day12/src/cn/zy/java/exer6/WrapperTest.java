@@ -1,4 +1,5 @@
-package src.cn.zy.java.exer6;
+package cn.zy.java.exer6;
+
 
 import org.junit.Test;
 

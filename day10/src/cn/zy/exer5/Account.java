@@ -1,4 +1,4 @@
-package src.cn.zy.exer5;
+package cn.zy.exer5;
 
 
 /**

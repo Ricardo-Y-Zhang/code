@@ -1,4 +1,4 @@
-package src.com.goodrock.java;
+package com.goodrock.java;
 
 public class MethodTest1 {
     public static void main(String[] args) {

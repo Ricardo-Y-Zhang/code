@@ -1,4 +1,4 @@
-package src.cn.zy.java.exer5;
+package cn.zy.java.exer5;
 
 import org.junit.Test;
 

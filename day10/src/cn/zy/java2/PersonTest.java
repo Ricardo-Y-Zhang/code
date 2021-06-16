@@ -1,4 +1,4 @@
-package src.cn.zy.java2;
+package cn.zy.java2;
 
 public class PersonTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package src.com.goodrock.java;
+package com.goodrock.java;
 
 public class OverloadExer {
     public void mOL(int x){

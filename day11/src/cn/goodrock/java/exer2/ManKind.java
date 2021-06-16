@@ -1,4 +1,4 @@
-package src.cn.goodrock.java.exer2;
+package cn.goodrock.java.exer2;
 
 import java.lang.invoke.SerializedLambda;
 

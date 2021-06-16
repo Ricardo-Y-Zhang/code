@@ -1,4 +1,4 @@
-package src.cn.zy.exer6;
+package cn.zy.exer6;
 
 /**
  * @program: code

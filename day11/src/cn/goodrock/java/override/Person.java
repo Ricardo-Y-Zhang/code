@@ -1,4 +1,4 @@
-package src.cn.goodrock.java.override;
+package cn.goodrock.java.override;
 
 /**
  * @program: code

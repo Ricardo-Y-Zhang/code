@@ -1,4 +1,4 @@
-package src.cn.zy.java.java8;
+package cn.zy.java.java8;
 
 /**
  * @program: code

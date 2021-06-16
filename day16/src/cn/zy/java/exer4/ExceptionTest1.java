@@ -1,4 +1,4 @@
-package src.cn.zy.java.exer4;
+package cn.zy.java.exer4;
 
 import org.junit.Test;
 

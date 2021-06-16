@@ -1,4 +1,4 @@
-package src.cn.zy.java.exer7;
+package cn.zy.java.exer7;
 
 import javax.crypto.interfaces.PBEKey;
 

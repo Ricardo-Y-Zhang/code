@@ -1,4 +1,4 @@
-package src.cn.goodrock.java.exer5;
+package cn.goodrock.java.exer5;
 
 /**
  * @program: code

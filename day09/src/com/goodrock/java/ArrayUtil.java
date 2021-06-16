@@ -1,4 +1,4 @@
-package src.com.goodrock.java;
+package com.goodrock.java;
 
 /*
 自定义数组的工具类

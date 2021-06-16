@@ -1,4 +1,4 @@
-package src.cn.zy.exer;
+package cn.zy.exer;
 
 public class Person {
     private int age;

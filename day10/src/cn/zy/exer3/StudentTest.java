@@ -1,4 +1,4 @@
-package src.cn.zy.exer3;
+package cn.zy.exer3;
 
 public class StudentTest {
     public static void main(String[] args) {

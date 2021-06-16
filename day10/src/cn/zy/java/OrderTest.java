@@ -1,4 +1,4 @@
-package src.cn.zy.java;
+package cn.zy.java;
 
 public class OrderTest {
     public static void main(String[] args) {

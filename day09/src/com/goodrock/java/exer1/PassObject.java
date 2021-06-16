@@ -1,4 +1,4 @@
-package src.com.goodrock.java.exer1;
+package com.goodrock.java.exer1;
 
 public class PassObject {
     public static void main(String[] args){

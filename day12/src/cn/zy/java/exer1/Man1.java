@@ -1,4 +1,4 @@
-package src.cn.zy.java.exer1;
+package cn.zy.java.exer1;
 
 /**
  * @program: code
@@ -6,7 +6,7 @@ package src.cn.zy.java.exer1;
  * @author: Mr.Yan
  * @create: 2021-05-31 14:14
  **/
-public class Man1 extends Person1{
+public class Man1 extends Person1 {
     boolean isSmoking;
 
     int id = 1002;

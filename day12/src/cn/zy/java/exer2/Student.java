@@ -1,4 +1,4 @@
-package src.cn.zy.java.exer2;
+package cn.zy.java.exer2;
 
 /**
  * @program: code

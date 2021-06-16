@@ -1,4 +1,4 @@
-package src.cn.zy.java.exer11;
+package cn.zy.java.exer11;
 
 public interface Spoony {
     default void help(){
