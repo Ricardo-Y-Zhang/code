@@ -2,7 +2,7 @@ package cn.zy.java.exer2;
 
 /**
  * @program: code
- * @description: 解决线程安全问题
+ * @description: 同步代码块解决继承Thread类的线程安全问题
  * @author: Mr.Yan
  * @create: 2021-06-15 18:37
  **/
@@ -36,7 +36,8 @@ class Window extends Thread{
     public void run() {
 
         while(true){
-            synchronized(obj) {
+            //synchronized(obj) {
+            synchronized (Window.class){//Window.class只会加载一次，是唯一的
                 if (ticket > 0) {
                     System.out.println(getName() + " : 卖票，票号为" + ticket);
                     ticket--;
