@@ -38,7 +38,7 @@ public class DateTimeFormatterTest {
 
         LocalDateTime now = LocalDateTime.now();
 
-        String format = dateTimeFormatter.format(now);
+        String format = dateTimeFormatter. format(now);
         System.out.println(format);//2021年6月23日 下午2:58:37
     }
 
