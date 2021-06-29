@@ -71,10 +71,17 @@ public class TeamService {
         //该员工已是某团队成员、或休假
         //Status.BUSY 等为全局常量，equals方法未重写仍可使用
         //((Programmer) e).getStatus().equals(Status.BUSY)
-        if("BUSY".equals(((Programmer) e).getStatus().getNAME())){
-            throw new TeamException("该员工已是某团队成员");
-        }else if("VOCATION".equals(((Programmer) e).getStatus().getNAME())){
-            throw new TeamException("该员工正在休假，无法添加");
+//        if("BUSY".equals(((Programmer) e).getStatus().getNAME())){
+//            throw new TeamException("该员工已是某团队成员");
+//        }else if("VOCATION".equals(((Programmer) e).getStatus().getNAME())){
+//            throw new TeamException("该员工正在休假，无法添加");
+//        }
+
+        switch (((Programmer) e).getStatus()){
+            case BUSY:
+                throw new TeamException("该员工已是某团队成员");
+            case VOCATION:
+                throw new TeamException("该员工正在休假，无法添加");
         }
 
 
