@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 /**
  * @program: code
@@ -15,7 +16,7 @@ import java.util.Collection;
 public class ForTest {
 
     @Test
-    public void test1(){
+    public void test1() {
         Collection coll = new ArrayList();
         coll.add("abc");
         coll.add(123);
@@ -24,7 +25,7 @@ public class ForTest {
         coll.add(new Person("Jerry", 20));
 
         //for(集合元素的类型 局部变量 ： 集合对象)
-        for(Object obj : coll){
+        for (Object obj : coll) {
             System.out.println(obj);
         }
     }
