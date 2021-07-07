@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * @program: code
- * @description:
+ * @description: 定义操作数据库中的表的通用操作，增删改查操作
  * @author: Mr.Yan
  * @create: 2021-07-06 15:51
  **/
