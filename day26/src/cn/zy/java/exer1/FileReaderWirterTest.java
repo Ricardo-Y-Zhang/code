@@ -68,7 +68,7 @@ public class FileReaderWirterTest {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if (fileReader == null) {
+            if (fileReader != null) {
                 //4. 资源的关闭
                 try {
                     fileReader.close();
@@ -176,7 +176,7 @@ public class FileReaderWirterTest {
             e.printStackTrace();
         } finally {
             //4. 流资源的关闭
-            if (fileInputStream == null) {
+            if (fileInputStream != null) {
                 try {
                     fileInputStream.close();
                 } catch (IOException e) {
