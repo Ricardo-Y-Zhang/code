@@ -1,12 +1,15 @@
 package cn.zy.java.exer1;
 
+import java.io.Serializable;
+
 /**
  * @program: code
  * @description:
  * @author: Mr.Yan
  * @create: 2021-07-14 14:03
  **/
-public class Person {
+public class Person implements Serializable {
+    private static final long serialVersionUID = -634594470754667710L;
     private String name;
     public int age;
 
@@ -29,7 +32,7 @@ public class Person {
         return age;
     }
 
-    public void show(){
+    public void show() throws NullPointerException, RuntimeException{
         System.out.println("我是个人");
     }
 
