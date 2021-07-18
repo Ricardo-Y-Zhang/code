@@ -44,4 +44,60 @@ public class StreamAPITest1 {
 
         integers.stream().distinct().forEach(System.out::println);
     }
+
+
+    //2. 映射
+    @Test
+    public void test2(){
+        //1. map(Function f)
+        List<String> list = Arrays.asList("aa", "bb", "cc", "dd");
+        list.stream().map(str -> str.toUpperCase()).forEach(System.out::println);
+
+        //获取员工姓名长度大于3的员工的姓名
+        List<Employee> employees = Employee.getEmployees();
+        employees.stream().map(e->e.getName()).filter(str->str.length()>2).forEach(System.out::println);
+
+
+        //flatMap(Function f)
+        Stream<Stream<Character>> streamStream = list.stream().map(StreamAPITest1::fromStringToStream);
+
+        Stream<Character> characterStream = list.stream().flatMap(StreamAPITest1::fromStringToStream);
+        characterStream.forEach(System.out::println);
+
+    }
+
+    //将字符串中的多个字符构成的集合转换为对应的Stream实例
+    public static Stream<Character> fromStringToStream(String str){
+        ArrayList<Character> list = new ArrayList<>();
+
+        for(Character c : str.toCharArray()){
+            list.add(c);
+        }
+
+        return list.stream();
+    }
+
+
+    //3. 排序
+    @Test
+    public void test3(){
+        //sorted()：自然排序
+        List<Integer> list = Arrays.asList(12, 32, 98, 33, 76, 53, -9);
+
+        list.stream().sorted().forEach(System.out::println);
+
+
+        List<Employee> employees = Employee.getEmployees();
+        System.out.println("自然排序:");
+        employees.stream().sorted().forEach(System.out::println);
+
+
+        //sorted(Comparator com)：定制排序
+        System.out.println("定制排序：");
+        employees.stream().sorted((e1, e2)->Integer.compare(e2.getId(), e1.getId())).forEach(System.out::println);
+    }
+
+
+
+
 }
